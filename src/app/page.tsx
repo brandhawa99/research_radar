@@ -9,7 +9,7 @@ export default function Home() {
       </div>
       <div>
         <p>
-          Find your first research job
+          Find your next research job
         </p>
       </div>
 
