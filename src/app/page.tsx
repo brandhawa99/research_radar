@@ -1,7 +1,8 @@
 import { DiscIcon } from "@radix-ui/react-icons"
 import Link from "next/link";
 import {buttonVariants} from '@/components/ui/button'
-import Testimonalcard from "@/components/ui/testimonalcard";
+import Image from "next/image";
+import landingzoneImg from '../../public/landingpage.jpg'
 export default function Home() {
   return (
     <main className=" flex flex-col items-center bg-zinc-100">
@@ -13,7 +14,7 @@ export default function Home() {
           </h1>
         </header>
       </div>
-      <div className="flex flex-col py-8 gap-2">
+      <div className="flex flex-col py-2 gap-2">
         <h1 className="flex flex-col text-center text-5xl font-extrabold text-balance bg-gradient-to-r from-red-700 via-red-500 to-red-900 text-transparent bg-clip-text">
         <a className="text-black  px-125-600red-600 text-sm py-5">Research Opportunity Search Tool</a>
             Simplify Your Research Job Search with Research Radar. 
@@ -29,11 +30,20 @@ export default function Home() {
               Sign Up
             </Link>
         </div>
+          <Image 
+            className="self-center p-10 rounded-md"
+            src={landingzoneImg}
+            alt="test tubes"
+            loading="lazy"
+            width={600}
+            style={{borderRadius:"50px"}}
+            />
+
 
         
       </div>
 
-      <footer className="bg-zinc-200 w-screen p-10">
+      <footer className="bg-zinc-200 w-screen p-10 ">
         footer
       </footer>
 
