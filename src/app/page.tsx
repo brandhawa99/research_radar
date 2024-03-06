@@ -4,7 +4,7 @@ import {buttonVariants} from '@/components/ui/button'
 import Testimonalcard from "@/components/ui/testimonalcard";
 export default function Home() {
   return (
-    <main className=" flex w-100 flex-col items-center bg-zinc-100">
+    <main className=" flex flex-col items-center bg-zinc-100">
       <div>
         <header className="gap-2 font-extrabold flex items-center p-6 ">
           <DiscIcon width={25} height={25}/>
@@ -28,24 +28,6 @@ export default function Home() {
             <Link href={"/signup"} className={buttonVariants({variant: "outline"})}>
               Sign Up
             </Link>
-        </div>
-
-        <h2 className="text-[color:black] font-2xl self-center py-10">
-          Testimonials
-        </h2>
-        <div className="flex overflow-hidden space-x-16">
-   
-          <div className="flex space-x-16 animate-loop-scroll">
-            <Testimonalcard />
-            <Testimonalcard />
-            <Testimonalcard />
-           </div>
-           <div className="flex space-x-16 animate-loop-scroll">
-
-            <Testimonalcard />
-            <Testimonalcard />
-            <Testimonalcard />
-          </div>
         </div>
 
         
